@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="250dp"
+    tools:context="th.ac.su.kunhong.chaochaoquiz.MainActivity"
+    android:background="@drawable/startgame">
+
+
+    <!-- Name Label -->
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblName"
+        android:layout_marginBottom="10dp"/>
+
+    <Button android:id="@+id/btnStart"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblEmail"
+        android:background="@drawable/button_start"/>
+
+    <!-- Button to show session data -->
+    <Button android:id="@+id/btnLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnStart"
+        android:background="@drawable/button_logout"/>
+
+</RelativeLayout>
